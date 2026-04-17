@@ -1,0 +1,71 @@
+# Repository-declared type → canonical ObjectType mapping.
+#
+# Each entry gives a `type` and a `confidence` level. Repositories that use
+# overloaded labels (e.g. DSpace's "Text" covering articles, reports, and
+# theses) are mapped with `confidence: low` so the rule-based classifier can
+# override them.
+#
+# The ``default`` block is consulted when no repository-specific mapping
+# exists. New repositories can be added without code changes.
+
+repositories:
+  default:
+    declared_to_type:
+      article: {type: article, confidence: high}
+      Article: {type: article, confidence: high}
+      JournalArticle: {type: article, confidence: high}
+      publication/article: {type: article, confidence: high}
+      dataset: {type: dataset, confidence: high}
+      Dataset: {type: dataset, confidence: high}
+      software: {type: software, confidence: high}
+      Software: {type: software, confidence: high}
+      thesis: {type: thesis, confidence: high}
+      Thesis: {type: thesis, confidence: high}
+      book: {type: book, confidence: high}
+      Book: {type: book, confidence: high}
+      BookChapter: {type: book_chapter, confidence: high}
+      book-chapter: {type: book_chapter, confidence: high}
+      preprint: {type: preprint, confidence: high}
+      Preprint: {type: preprint, confidence: high}
+      ConferencePaper: {type: conference_paper, confidence: high}
+      conference-paper: {type: conference_paper, confidence: high}
+      Report: {type: report, confidence: high}
+      report: {type: report, confidence: high}
+      Text: {type: article, confidence: low}         # overloaded
+      Image: {type: other, confidence: medium}
+      Audiovisual: {type: other, confidence: medium}
+      Other: {type: other, confidence: low}
+
+  tier1_dspace_example:
+    declared_to_type:
+      Article: {type: article, confidence: high}
+      Working Paper: {type: preprint, confidence: medium}
+      Text: {type: article, confidence: low}  # DSpace overloads Text
+      Thesis: {type: thesis, confidence: high}
+      Report: {type: report, confidence: high}
+
+  tier2_datacite_partial:
+    declared_to_type:
+      JournalArticle: {type: article, confidence: high}
+      Text: {type: article, confidence: low}
+      Dataset: {type: dataset, confidence: high}
+      Report: {type: report, confidence: high}
+
+  zenodo:
+    declared_to_type:
+      publication/article: {type: article, confidence: high}
+      publication/preprint: {type: preprint, confidence: high}
+      publication/thesis: {type: thesis, confidence: high}
+      publication/report: {type: report, confidence: high}
+      publication/book: {type: book, confidence: high}
+      publication/section: {type: book_chapter, confidence: high}
+      dataset: {type: dataset, confidence: high}
+      software: {type: software, confidence: high}
+      publication/conferencepaper: {type: conference_paper, confidence: high}
+
+  tier4_inveniordm_example:
+    declared_to_type:
+      JournalArticle: {type: article, confidence: high}
+      Dataset: {type: dataset, confidence: high}
+      Software: {type: software, confidence: high}
+      Text: {type: article, confidence: low}

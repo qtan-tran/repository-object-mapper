@@ -1,0 +1,49 @@
+{
+  "id": 10024,
+  "doi": "10.5281/zenodo.10024",
+  "metadata": {
+    "title": "Zenodo article 24: open access study",
+    "description": "Abstract for study 24. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K24",
+        "orcid": "0000-0003-0024-0003",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00024",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      },
+      {
+        "identifier": "https://github.com/example/repo24",
+        "scheme": "url",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_24.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10024"
+  }
+}

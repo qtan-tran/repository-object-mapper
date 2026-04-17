@@ -1,0 +1,44 @@
+{
+  "id": 10025,
+  "doi": "10.5281/zenodo.10025",
+  "metadata": {
+    "title": "Zenodo article 25: open access study",
+    "description": "Abstract for study 25. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K25",
+        "orcid": "0000-0003-0025-0003",
+        "affiliation": "Zenodo Example University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00025",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_25.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10025"
+  }
+}

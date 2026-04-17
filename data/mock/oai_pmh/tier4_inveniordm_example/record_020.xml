@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<record xmlns="http://www.openarchives.org/OAI/2.0/">
+  <header>
+    <identifier>oai:tier4:20</identifier>
+    <datestamp>2024-03-10T00:00:00Z</datestamp>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4">
+      <identifier identifierType="DOI">10.9100/tier4.20</identifier>
+      <titles><title>Tier 4 publication 20: rich relational metadata</title></titles>
+      <creators><creator><creatorName>Nguyen, L20</creatorName><nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0020-0002</nameIdentifier><affiliation affiliationIdentifier="https://ror.org/0xyz12345" affiliationIdentifierScheme="ROR">Example Institute</affiliation></creator></creators>
+      <publisher>Mock Publisher</publisher>
+      <publicationYear>2024</publicationYear>
+      <resourceType resourceTypeGeneral="JournalArticle">JournalArticle</resourceType>
+      <subjects><subject>scholarly communication</subject></subjects>
+      <descriptions><description descriptionType="Abstract">Rich metadata with typed relations and funder identifiers.</description></descriptions>
+      <rightsList><rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</rights></rightsList>
+      <relatedIdentifiers><relatedIdentifier relationType="IsSupplementTo" relatedIdentifierType="DOI" resourceTypeGeneral="Dataset">10.9101/data.20</relatedIdentifier><relatedIdentifier relationType="IsVersionOf" relatedIdentifierType="DOI" resourceTypeGeneral="Text">10.9101/preprint.20</relatedIdentifier></relatedIdentifiers>
+      
+    </resource>
+  </metadata>
+</record>

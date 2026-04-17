@@ -1,0 +1,789 @@
+{
+  "cross_tier": {
+    "relational_raw_norm": {
+      "test": "kruskal_wallis",
+      "column": "relational_raw_norm",
+      "H": 54.716608365424314,
+      "p_value": 7.891677084466241e-12,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.623091667053305,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "agent_raw": {
+      "test": "kruskal_wallis",
+      "column": "agent_raw",
+      "H": 47.37367151065229,
+      "p_value": 2.894275520402892e-10,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.5346225483211119,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "object_raw_fully_norm": {
+      "test": "kruskal_wallis",
+      "column": "object_raw_fully_norm",
+      "H": NaN,
+      "p_value": NaN,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": NaN,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "object_raw_fully_weakly_norm": {
+      "test": "kruskal_wallis",
+      "column": "object_raw_fully_weakly_norm",
+      "H": 26.03571234735403,
+      "p_value": 9.374603399896492e-06,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.277538702980169,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "relational_adjusted": {
+      "test": "kruskal_wallis",
+      "column": "relational_adjusted",
+      "H": 25.347777069118518,
+      "p_value": 1.3059558408854409e-05,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.26925032613395805,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "agent_adjusted": {
+      "test": "kruskal_wallis",
+      "column": "agent_adjusted",
+      "H": 50.82228150106245,
+      "p_value": 5.337713610195622e-11,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.5761720662778608,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "object_adjusted_fully": {
+      "test": "kruskal_wallis",
+      "column": "object_adjusted_fully",
+      "H": NaN,
+      "p_value": NaN,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": NaN,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "object_adjusted_fully_weakly": {
+      "test": "kruskal_wallis",
+      "column": "object_adjusted_fully_weakly",
+      "H": 23.132124503134254,
+      "p_value": 3.7901484273417376e-05,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.24255571690523198,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    },
+    "overall_embeddedness_score": {
+      "test": "kruskal_wallis",
+      "column": "overall_embeddedness_score",
+      "H": 62.38699118607148,
+      "p_value": 1.816039270966523e-13,
+      "n_groups": 4,
+      "n_total": 87,
+      "epsilon_squared": 0.7155059179044756,
+      "power_caveat": "Cross-tier test is exploratory at v0.2 (n=4 repositories). Not statistically decisive."
+    }
+  },
+  "within_repository": {
+    "relational_raw_norm": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_raw_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_raw_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "relational_raw_norm",
+        "test": "kruskal_wallis",
+        "H": 2.572497665732964,
+        "p_value": 0.27630530893067345,
+        "n_total": 30,
+        "epsilon_squared": 0.02120361724936904,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 43.0,
+            "p_value": 0.2548666180544824,
+            "rank_biserial": 0.2833333333333333,
+            "article_mean": 0.8938657257875793,
+            "other_mean": 0.9463956978027461,
+            "article_lower_than_other": true
+          },
+          "article_vs_software": {
+            "U": 50.5,
+            "p_value": 0.3832250887533385,
+            "rank_biserial": -0.26249999999999996,
+            "article_mean": 0.8938657257875793,
+            "other_mean": 0.8311576687693607,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_raw_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "agent_raw": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_raw",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_raw",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "agent_raw",
+        "test": "kruskal_wallis",
+        "H": 0.796616623150575,
+        "p_value": 0.6714549784036821,
+        "n_total": 30,
+        "epsilon_squared": -0.04456975469812686,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 52.0,
+            "p_value": 0.6160963992828117,
+            "rank_biserial": 0.1333333333333333,
+            "article_mean": 0.475,
+            "other_mean": 0.5,
+            "article_lower_than_other": true
+          },
+          "article_vs_software": {
+            "U": 30.5,
+            "p_value": 0.45002168530497677,
+            "rank_biserial": 0.23750000000000004,
+            "article_mean": 0.475,
+            "other_mean": 0.5625,
+            "article_lower_than_other": true
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_raw",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "object_raw_fully_norm": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "object_raw_fully_norm",
+        "test": "kruskal_wallis",
+        "H": NaN,
+        "p_value": NaN,
+        "n_total": 30,
+        "epsilon_squared": NaN,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 60.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          },
+          "article_vs_software": {
+            "U": 40.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "object_raw_fully_weakly_norm": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_weakly_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_weakly_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "object_raw_fully_weakly_norm",
+        "test": "kruskal_wallis",
+        "H": NaN,
+        "p_value": NaN,
+        "n_total": 30,
+        "epsilon_squared": NaN,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 60.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          },
+          "article_vs_software": {
+            "U": 40.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_raw_fully_weakly_norm",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "relational_adjusted": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "relational_adjusted",
+        "test": "kruskal_wallis",
+        "H": 2.572497665732964,
+        "p_value": 0.27630530893067345,
+        "n_total": 30,
+        "epsilon_squared": 0.02120361724936904,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 43.0,
+            "p_value": 0.2548666180544824,
+            "rank_biserial": 0.2833333333333333,
+            "article_mean": 0.8375,
+            "other_mean": 0.9166666666666666,
+            "article_lower_than_other": true
+          },
+          "article_vs_software": {
+            "U": 50.5,
+            "p_value": 0.3832250887533385,
+            "rank_biserial": -0.26249999999999996,
+            "article_mean": 0.8375,
+            "other_mean": 0.75,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "relational_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "agent_adjusted": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "agent_adjusted",
+        "test": "kruskal_wallis",
+        "H": 0.796616623150575,
+        "p_value": 0.6714549784036821,
+        "n_total": 30,
+        "epsilon_squared": -0.04456975469812686,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 52.0,
+            "p_value": 0.6160963992828117,
+            "rank_biserial": 0.1333333333333333,
+            "article_mean": 0.475,
+            "other_mean": 0.5,
+            "article_lower_than_other": true
+          },
+          "article_vs_software": {
+            "U": 30.5,
+            "p_value": 0.45002168530497677,
+            "rank_biserial": 0.23750000000000004,
+            "article_mean": 0.475,
+            "other_mean": 0.5625,
+            "article_lower_than_other": true
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "agent_adjusted",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "object_adjusted_fully": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "object_adjusted_fully",
+        "test": "kruskal_wallis",
+        "H": NaN,
+        "p_value": NaN,
+        "n_total": 30,
+        "epsilon_squared": NaN,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 60.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          },
+          "article_vs_software": {
+            "U": 40.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "object_adjusted_fully_weakly": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully_weakly",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully_weakly",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "object_adjusted_fully_weakly",
+        "test": "kruskal_wallis",
+        "H": NaN,
+        "p_value": NaN,
+        "n_total": 30,
+        "epsilon_squared": NaN,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 60.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          },
+          "article_vs_software": {
+            "U": 40.0,
+            "p_value": 1.0,
+            "rank_biserial": 0.0,
+            "article_mean": 0.0,
+            "other_mean": 0.0,
+            "article_lower_than_other": false
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "object_adjusted_fully_weakly",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    },
+    "overall_embeddedness_score": {
+      "tier1_dspace_example": {
+        "n_articles": 15,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "overall_embeddedness_score",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier2_datacite_partial": {
+        "n_articles": 22,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "overall_embeddedness_score",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      },
+      "tier4_inveniordm_example": {
+        "n_articles": 20,
+        "n_datasets": 6,
+        "n_software": 4,
+        "column": "overall_embeddedness_score",
+        "test": "kruskal_wallis",
+        "H": 1.6072061953180454,
+        "p_value": 0.44771290114319173,
+        "n_total": 30,
+        "epsilon_squared": -0.014547918691924244,
+        "pairwise": {
+          "article_vs_dataset": {
+            "U": 41.0,
+            "p_value": 0.24342886194680802,
+            "rank_biserial": 0.31666666666666665,
+            "article_mean": 0.4562885752625265,
+            "other_mean": 0.48213189926758204,
+            "article_lower_than_other": true
+          },
+          "article_vs_software": {
+            "U": 34.0,
+            "p_value": 0.6564670875908654,
+            "rank_biserial": 0.15000000000000002,
+            "article_mean": 0.4562885752625265,
+            "other_mean": 0.4645525562564536,
+            "article_lower_than_other": true
+          }
+        }
+      },
+      "zenodo": {
+        "n_articles": 30,
+        "n_datasets": 0,
+        "n_software": 0,
+        "column": "overall_embeddedness_score",
+        "test": "skipped",
+        "reason": "fewer than 2 object-type groups"
+      }
+    }
+  },
+  "bootstrap_ci": {
+    "tier1_dspace_example": {
+      "n": 15,
+      "tier": 1,
+      "relational_raw_norm": {
+        "mean": 0.1847884347860275,
+        "ci_low": 0.07894219330212389,
+        "ci_high": 0.31635875695623394
+      },
+      "agent_raw": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_raw_fully_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_raw_fully_weakly_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "relational_adjusted": {
+        "mean": 0.4,
+        "ci_low": 0.13333333333333333,
+        "ci_high": 0.6666666666666666
+      },
+      "agent_adjusted": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_adjusted_fully": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_adjusted_fully_weakly": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "overall_embeddedness_score": {
+        "mean": 0.06159614492867583,
+        "ci_low": 0.026314064434041294,
+        "ci_high": 0.10545291898541133
+      }
+    },
+    "tier2_datacite_partial": {
+      "n": 22,
+      "tier": 2,
+      "relational_raw_norm": {
+        "mean": 0.31485666293912173,
+        "ci_low": 0.22022325795988665,
+        "ci_high": 0.4144164350542694
+      },
+      "agent_raw": {
+        "mean": 0.17045454545454544,
+        "ci_low": 0.10227272727272728,
+        "ci_high": 0.25
+      },
+      "object_raw_fully_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_raw_fully_weakly_norm": {
+        "mean": 0.18181818181818182,
+        "ci_low": 0.045454545454545456,
+        "ci_high": 0.36363636363636365
+      },
+      "relational_adjusted": {
+        "mean": 0.4318181818181818,
+        "ci_low": 0.29545454545454547,
+        "ci_high": 0.5909090909090909
+      },
+      "agent_adjusted": {
+        "mean": 0.17045454545454544,
+        "ci_low": 0.10227272727272728,
+        "ci_high": 0.25
+      },
+      "object_adjusted_fully": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_adjusted_fully_weakly": {
+        "mean": 0.09090909090909091,
+        "ci_low": 0.022727272727272728,
+        "ci_high": 0.18181818181818182
+      },
+      "overall_embeddedness_score": {
+        "mean": 0.16177040279788912,
+        "ci_low": 0.12419885490115332,
+        "ci_high": 0.2040367131796508
+      }
+    },
+    "tier4_inveniordm_example": {
+      "n": 20,
+      "tier": 4,
+      "relational_raw_norm": {
+        "mean": 0.8938657257875793,
+        "ci_low": 0.8504507292840879,
+        "ci_high": 0.9356748373632954
+      },
+      "agent_raw": {
+        "mean": 0.475,
+        "ci_low": 0.3875,
+        "ci_high": 0.5625
+      },
+      "object_raw_fully_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_raw_fully_weakly_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "relational_adjusted": {
+        "mean": 0.8375,
+        "ci_low": 0.775,
+        "ci_high": 0.9
+      },
+      "agent_adjusted": {
+        "mean": 0.475,
+        "ci_low": 0.3875,
+        "ci_high": 0.5625
+      },
+      "object_adjusted_fully": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_adjusted_fully_weakly": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "overall_embeddedness_score": {
+        "mean": 0.4562885752625265,
+        "ci_low": 0.4264500576443281,
+        "ci_high": 0.48760622723743524
+      }
+    },
+    "zenodo": {
+      "n": 30,
+      "tier": 3,
+      "relational_raw_norm": {
+        "mean": 0.48528548580618003,
+        "ci_low": 0.3960046112256087,
+        "ci_high": 0.5683686625683414
+      },
+      "agent_raw": {
+        "mean": 0.35833333333333334,
+        "ci_low": 0.30833333333333335,
+        "ci_high": 0.4083333333333333
+      },
+      "object_raw_fully_norm": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_raw_fully_weakly_norm": {
+        "mean": 0.5333333333333333,
+        "ci_low": 0.36666666666666664,
+        "ci_high": 0.7
+      },
+      "relational_adjusted": {
+        "mean": 0.4444444444444444,
+        "ci_low": 0.3555555555555555,
+        "ci_high": 0.5333333333333333
+      },
+      "agent_adjusted": {
+        "mean": 0.47777777777777775,
+        "ci_low": 0.4111111111111111,
+        "ci_high": 0.5444444444444444
+      },
+      "object_adjusted_fully": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "object_adjusted_fully_weakly": {
+        "mean": 0.17777777777777773,
+        "ci_low": 0.12222222222222222,
+        "ci_high": 0.2333333333333333
+      },
+      "overall_embeddedness_score": {
+        "mean": 0.2812062730465045,
+        "ci_low": 0.2521577926089102,
+        "ci_high": 0.3132084195600998
+      }
+    }
+  }
+}

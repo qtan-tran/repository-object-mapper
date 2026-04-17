@@ -1,0 +1,57 @@
+{
+  "id": 10016,
+  "doi": "10.5281/zenodo.10016",
+  "metadata": {
+    "title": "Zenodo article 16: open access study",
+    "description": "Abstract for study 16. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K16",
+        "orcid": "0000-0003-0016-0003",
+        "affiliation": "Zenodo Example University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00016",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      },
+      {
+        "identifier": "https://github.com/example/repo16",
+        "scheme": "url",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": [
+      {
+        "code": "GRANT-16",
+        "funder": {
+          "name": "European Commission",
+          "doi": "https://doi.org/10.13039/501100000781"
+        }
+      }
+    ]
+  },
+  "files": [
+    {
+      "key": "article_16.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10016"
+  }
+}

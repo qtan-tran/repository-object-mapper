@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<record xmlns="http://www.openarchives.org/OAI/2.0/">
+  <header>
+    <identifier>oai:tier1:2</identifier>
+    <datestamp>2023-05-15T00:00:00Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc
+        xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:title>Tier 1 study 2 on environmental monitoring</dc:title>
+      <dc:creator>Smith, J2</dc:creator>
+      <dc:subject>environmental science</dc:subject>
+      <dc:description>A short abstract on monitoring practices.</dc:description>
+      <dc:publisher>Mock Publisher</dc:publisher>
+      <dc:date>2023-05-15</dc:date>
+      <dc:type>Text</dc:type>
+      <dc:identifier>hdl.handle.net/10/2</dc:identifier>
+      <dc:relation>https://example.edu/resource/2</dc:relation><dc:relation>doi:10.1234/tier1.2</dc:relation>
+      <dc:rights>CC-BY-4.0</dc:rights>
+      <dc:language>en</dc:language>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "repository-object-mapper"
+abstract: >-
+  An empirical pipeline for measuring the embeddedness of scholarly
+  articles within open access repository infrastructures, supporting a
+  Journal of Documentation submission on the decentering of the
+  scholarly article as a documentary object.
+version: 0.2.0
+date-released: 2026-04-17
+license: MIT
+type: software
+authors:
+  - family-names: "repository-object-mapper contributors"
+repository-code: "https://github.com/EXAMPLE/repository-object-mapper"
+keywords:
+  - scholarly communication
+  - open access
+  - repositories
+  - documentation theory

@@ -1,0 +1,52 @@
+{
+  "id": 10021,
+  "doi": "10.5281/zenodo.10021",
+  "metadata": {
+    "title": "Zenodo article 21: open access study",
+    "description": "Abstract for study 21. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K21",
+        "orcid": null,
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1021",
+        "scheme": "doi",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": [
+      {
+        "code": "GRANT-21",
+        "funder": {
+          "name": "European Commission",
+          "doi": "https://doi.org/10.13039/501100000781"
+        }
+      }
+    ]
+  },
+  "files": [
+    {
+      "key": "article_21.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10021"
+  }
+}

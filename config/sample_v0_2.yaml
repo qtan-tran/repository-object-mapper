@@ -1,0 +1,56 @@
+# v0.2 sampling frame — one representative repository per a priori schema tier.
+#
+# Tier assignments are a priori classifications to be validated empirically
+# against the capability profile computed at harvest time. Where the profile
+# contradicts the a priori tier, the empirical tier is used as the primary
+# indicator in analysis and the discrepancy is reported.
+#
+# Repository URLs below are anchor choices. Swap in substitutes that expose
+# the same schema richness if a given repository becomes unavailable.
+
+default_contact_email: "user@example.org"
+
+repositories:
+  - name: "tier1_dspace_example"
+    url: "https://example-institution.edu/dspace/"
+    type: "oai_pmh"
+    a_priori_tier: 1
+    endpoint: "https://example-institution.edu/dspace-oai/request"
+    metadata_formats: ["oai_dc"]
+    sampling_method: "systematic"
+    random_seed: 42
+    target_record_count: 1500
+    request_rate_per_second: 2.0
+
+  - name: "tier2_datacite_partial"
+    url: "https://example-national-repo.example/"
+    type: "oai_pmh"
+    a_priori_tier: 2
+    endpoint: "https://example-national-repo.example/oai"
+    metadata_formats: ["oai_datacite", "oai_dc"]
+    sampling_method: "systematic"
+    random_seed: 42
+    target_record_count: 1500
+    request_rate_per_second: 2.0
+
+  - name: "zenodo"
+    url: "https://zenodo.org/"
+    type: "zenodo_rest"
+    a_priori_tier: 3
+    endpoint: "https://zenodo.org/api/records"
+    metadata_formats: ["zenodo_json"]
+    sampling_method: "systematic_resource_type_article"
+    random_seed: 42
+    target_record_count: 1500
+    request_rate_per_second: 1.0
+
+  - name: "tier4_inveniordm_example"
+    url: "https://example-invenio.example/"
+    type: "oai_pmh"
+    a_priori_tier: 4
+    endpoint: "https://example-invenio.example/oai2d"
+    metadata_formats: ["datacite4", "oai_datacite", "oai_dc"]
+    sampling_method: "systematic"
+    random_seed: 42
+    target_record_count: 1500
+    request_rate_per_second: 2.0

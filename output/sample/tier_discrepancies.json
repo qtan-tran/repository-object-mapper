@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "tier1_dspace_example",
+    "a_priori_tier": 1,
+    "empirical_tier": 1,
+    "discrepancy": 0
+  },
+  {
+    "repository": "tier2_datacite_partial",
+    "a_priori_tier": 2,
+    "empirical_tier": 2,
+    "discrepancy": 0
+  },
+  {
+    "repository": "tier4_inveniordm_example",
+    "a_priori_tier": 4,
+    "empirical_tier": 4,
+    "discrepancy": 0
+  },
+  {
+    "repository": "zenodo",
+    "a_priori_tier": 3,
+    "empirical_tier": 2,
+    "discrepancy": 1
+  }
+]

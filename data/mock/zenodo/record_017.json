@@ -1,0 +1,49 @@
+{
+  "id": 10017,
+  "doi": "10.5281/zenodo.10017",
+  "metadata": {
+    "title": "Zenodo article 17: open access study",
+    "description": "Abstract for study 17. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K17",
+        "orcid": "0000-0003-0017-0003",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1017",
+        "scheme": "doi",
+        "relation": "isSupplementedBy"
+      },
+      {
+        "identifier": "https://github.com/example/repo17",
+        "scheme": "url",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_17.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10017"
+  }
+}

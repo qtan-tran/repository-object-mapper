@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repository-object-mapper"
+version = "0.2.0"
+description = "Empirical pipeline for measuring article embeddedness in open access repositories."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "repository-object-mapper contributors" }]
+keywords = ["scholarly communication", "repositories", "open access", "documentation theory"]
+dependencies = [
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "pydantic>=2.5",
+    "httpx>=0.27",
+    "sickle>=0.7",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "scipy>=1.11",
+    "typer>=0.12",
+    "structlog>=24.1",
+    "tenacity>=8.2",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+    "mypy>=1.8",
+    "types-PyYAML",
+    "pre-commit>=3.5",
+]
+
+[project.scripts]
+rom = "repository_object_mapper.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"

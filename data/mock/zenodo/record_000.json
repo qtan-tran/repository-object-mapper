@@ -1,0 +1,49 @@
+{
+  "id": 10000,
+  "doi": "10.5281/zenodo.10000",
+  "metadata": {
+    "title": "Dataset 0 measurements (csv)",
+    "description": "Abstract for study 0. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K0",
+        "orcid": "0000-0003-0000-0003",
+        "affiliation": "Zenodo Example University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1000",
+        "scheme": "doi",
+        "relation": "isSupplementedBy"
+      },
+      {
+        "identifier": "10.99999/unresolvable.0",
+        "scheme": "doi",
+        "relation": "cites"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_0.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10000"
+  }
+}

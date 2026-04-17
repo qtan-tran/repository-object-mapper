@@ -1,0 +1,48 @@
+{
+  "id": 10002,
+  "doi": "10.5281/zenodo.10002",
+  "metadata": {
+    "title": "Zenodo article 2: open access study",
+    "description": "Abstract for study 2. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K2",
+        "orcid": "0000-0003-0002-0003",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00002",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": [
+      {
+        "code": "GRANT-2",
+        "funder": {
+          "name": "European Commission",
+          "doi": "https://doi.org/10.13039/501100000781"
+        }
+      }
+    ]
+  },
+  "files": [],
+  "links": {
+    "self": "https://zenodo.org/api/records/10002"
+  }
+}

@@ -1,0 +1,21 @@
+repository,local_id,expected_object_type,note
+zenodo,10000,article,clean publication/article
+zenodo,10001,article,clean publication/article
+zenodo,10002,article,clean publication/article
+zenodo,10003,article,clean publication/article
+zenodo,10004,article,clean publication/article
+tier1_dspace_example,oai:tier1:0,article,declared Article
+tier1_dspace_example,oai:tier1:1,article,declared Text - disambiguated by title
+tier1_dspace_example,oai:tier1:2,article,declared Text - disambiguated by title
+tier1_dspace_example,oai:tier1:3,thesis,declared Thesis
+tier1_dspace_example,oai:tier1:4,preprint,Working Paper
+tier2_datacite_partial,oai:tier2:0,article,JournalArticle
+tier2_datacite_partial,oai:tier2:1,article,Text - article by content
+tier2_datacite_partial,oai:tier2:2,article,Text
+tier2_datacite_partial,oai:tier2:3,report,Report
+tier2_datacite_partial,oai:tier2:4,article,JournalArticle
+tier4_inveniordm_example,oai:tier4:0,article,JournalArticle with rich metadata
+tier4_inveniordm_example,oai:tier4:1,article,JournalArticle
+tier4_inveniordm_example,oai:tier4:2,dataset,Dataset
+tier4_inveniordm_example,oai:tier4:3,software,Software
+tier4_inveniordm_example,oai:tier4:4,article,JournalArticle

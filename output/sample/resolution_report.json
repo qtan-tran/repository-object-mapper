@@ -1,0 +1,22 @@
+{
+  "tier1_dspace_example": {
+    "fully_typed": 0,
+    "weakly_typed": 0,
+    "unresolved": 15
+  },
+  "tier2_datacite_partial": {
+    "fully_typed": 0,
+    "weakly_typed": 5,
+    "unresolved": 20
+  },
+  "zenodo": {
+    "fully_typed": 0,
+    "weakly_typed": 16,
+    "unresolved": 29
+  },
+  "tier4_inveniordm_example": {
+    "fully_typed": 0,
+    "weakly_typed": 0,
+    "unresolved": 101
+  }
+}

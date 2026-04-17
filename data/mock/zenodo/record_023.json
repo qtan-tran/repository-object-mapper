@@ -1,0 +1,49 @@
+{
+  "id": 10023,
+  "doi": "10.5281/zenodo.10023",
+  "metadata": {
+    "title": "Zenodo article 23: open access study",
+    "description": "Abstract for study 23. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K23",
+        "orcid": null,
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00023",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      },
+      {
+        "identifier": "10.99999/unresolvable.23",
+        "scheme": "doi",
+        "relation": "cites"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_23.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10023"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 10020,
+  "doi": "10.5281/zenodo.10020",
+  "metadata": {
+    "title": "Zenodo article 20: open access study",
+    "description": "Abstract for study 20. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K20",
+        "orcid": "0000-0003-0020-0003",
+        "affiliation": "Zenodo Example University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "2307.00020",
+        "scheme": "arxiv",
+        "relation": "isVersionOf"
+      },
+      {
+        "identifier": "https://github.com/example/repo20",
+        "scheme": "url",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_20.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10020"
+  }
+}

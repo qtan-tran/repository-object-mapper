@@ -1,0 +1,44 @@
+{
+  "id": 10013,
+  "doi": "10.5281/zenodo.10013",
+  "metadata": {
+    "title": "Zenodo article 13: open access study",
+    "description": "Abstract for study 13. Explores documentary status in OA infrastructure.",
+    "publication_date": "2024-06-01",
+    "creators": [
+      {
+        "name": "Kowalski, K13",
+        "orcid": "0000-0003-0013-0003",
+        "affiliation": "Zenodo Example University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1013",
+        "scheme": "doi",
+        "relation": "isSupplementedBy"
+      }
+    ],
+    "resource_type": {
+      "type": "publication",
+      "subtype": "article"
+    },
+    "keywords": [
+      "open access",
+      "scholarly communication"
+    ],
+    "license": {
+      "id": "CC-BY-4.0"
+    },
+    "language": "en",
+    "grants": []
+  },
+  "files": [
+    {
+      "key": "article_13.pdf"
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/10013"
+  }
+}

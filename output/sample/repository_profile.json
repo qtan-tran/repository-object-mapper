@@ -1,0 +1,142 @@
+{
+  "tier1_dspace_example": {
+    "a_priori_tier": 1,
+    "available_affordances": {
+      "adapter": "oai_pmh",
+      "format_negotiated": "oai_dc",
+      "native_relation_types_count": 1,
+      "native_relation_types_seen": [
+        "dc:relation"
+      ],
+      "permits_affiliation_ror": false,
+      "permits_creator_orcid": false,
+      "permits_funder": false,
+      "permits_relations": true,
+      "permits_typed_relations": false
+    },
+    "empirical_tier_indicator": 1,
+    "n_article_records": 15,
+    "n_records_total": 30,
+    "resolution_tier_distribution": {},
+    "resolved_object_type_distribution": {
+      "unresolved": 8
+    },
+    "used_affordances_articles": {
+      "articles_with_any_orcid": 0.0,
+      "articles_with_any_relation": 0.4,
+      "articles_with_any_ror": 0.0,
+      "articles_with_funder_id": 0.0,
+      "per_native_relation_type_rate": {
+        "dc:relation": 0.4
+      }
+    }
+  },
+  "tier2_datacite_partial": {
+    "a_priori_tier": 2,
+    "available_affordances": {
+      "adapter": "oai_pmh",
+      "format_negotiated": "oai_datacite",
+      "native_relation_types_count": 2,
+      "native_relation_types_seen": [
+        "IsSupplementTo",
+        "Cites"
+      ],
+      "permits_affiliation_ror": true,
+      "permits_creator_orcid": true,
+      "permits_funder": true,
+      "permits_relations": true,
+      "permits_typed_relations": true
+    },
+    "empirical_tier_indicator": 2,
+    "n_article_records": 22,
+    "n_records_total": 30,
+    "resolution_tier_distribution": {},
+    "resolved_object_type_distribution": {
+      "unresolved": 19
+    },
+    "used_affordances_articles": {
+      "articles_with_any_orcid": 0.3181818181818182,
+      "articles_with_any_relation": 0.6818181818181818,
+      "articles_with_any_ror": 0.36363636363636365,
+      "articles_with_funder_id": 0.0,
+      "per_native_relation_type_rate": {
+        "Cites": 0.18181818181818182,
+        "IsSupplementTo": 0.6818181818181818
+      }
+    }
+  },
+  "tier4_inveniordm_example": {
+    "a_priori_tier": 4,
+    "available_affordances": {
+      "adapter": "oai_pmh",
+      "format_negotiated": "datacite4",
+      "native_relation_types_count": 4,
+      "native_relation_types_seen": [
+        "IsSupplementTo",
+        "IsVersionOf",
+        "References",
+        "IsDocumentedBy"
+      ],
+      "permits_affiliation_ror": true,
+      "permits_creator_orcid": true,
+      "permits_funder": true,
+      "permits_relations": true,
+      "permits_typed_relations": true
+    },
+    "empirical_tier_indicator": 4,
+    "n_article_records": 20,
+    "n_records_total": 30,
+    "resolution_tier_distribution": {},
+    "resolved_object_type_distribution": {
+      "unresolved": 67
+    },
+    "used_affordances_articles": {
+      "articles_with_any_orcid": 0.8,
+      "articles_with_any_relation": 1.0,
+      "articles_with_any_ror": 0.8,
+      "articles_with_funder_id": 0.3,
+      "per_native_relation_type_rate": {
+        "IsDocumentedBy": 0.55,
+        "IsSupplementTo": 1.0,
+        "IsVersionOf": 1.0,
+        "References": 0.8
+      }
+    }
+  },
+  "zenodo": {
+    "a_priori_tier": 3,
+    "available_affordances": {
+      "adapter": "zenodo_rest",
+      "format_negotiated": "zenodo_json",
+      "native_relation_types_count": 3,
+      "native_relation_types_seen": [
+        "isSupplementedBy",
+        "cites",
+        "isVersionOf"
+      ],
+      "permits_affiliation_ror": false,
+      "permits_creator_orcid": true,
+      "permits_funder": true,
+      "permits_relations": true,
+      "permits_typed_relations": true
+    },
+    "empirical_tier_indicator": 2,
+    "n_article_records": 30,
+    "n_records_total": 30,
+    "resolution_tier_distribution": {},
+    "resolved_object_type_distribution": {
+      "unresolved": 45
+    },
+    "used_affordances_articles": {
+      "articles_with_any_orcid": 0.8666666666666667,
+      "articles_with_any_relation": 0.8666666666666667,
+      "articles_with_any_ror": 0.0,
+      "articles_with_funder_id": 0.5666666666666667,
+      "per_native_relation_type_rate": {
+        "cites": 0.2,
+        "isSupplementedBy": 0.6,
+        "isVersionOf": 0.5333333333333333
+      }
+    }
+  }
+}
