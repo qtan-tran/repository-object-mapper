@@ -16,7 +16,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-from .schema import NormalizedRecord, ObjectType, ResolutionTier
+from .schema import NormalizedRecord, ObjectType
 
 
 def build_profile(

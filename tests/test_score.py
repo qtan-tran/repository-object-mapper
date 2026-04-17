@@ -16,8 +16,8 @@ from repository_object_mapper.schema import NormalizedRecord
 from repository_object_mapper.score import (
     _agent_raw,
     _object_link_stats,
-    _relational_adjusted,
     _relation_count_and_distinct,
+    _relational_adjusted,
     score_records,
 )
 

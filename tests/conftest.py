@@ -15,9 +15,9 @@ from repository_object_mapper.schema import (
     HarvestProvenance,
     Identifier,
     NormalizedRecord,
+    ObjectType,
     Relation,
     ResolutionTier,
-    ObjectType,
 )
 
 

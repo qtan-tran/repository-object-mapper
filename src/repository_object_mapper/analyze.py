@@ -54,7 +54,7 @@ def per_repository_bootstrap(
     """Per-repository mean and 95% bootstrap CI for each scoring column."""
     out: dict[str, Any] = {}
     for repo, group in scores_articles.groupby("repository"):
-        out[repo] = {"n": int(len(group)), "tier": int(group["tier"].iloc[0])}
+        out[repo] = {"n": len(group), "tier": int(group["tier"].iloc[0])}
         for col in score_columns:
             vals = group[col].dropna().to_numpy(dtype=float)
             lo, hi = bootstrap_ci(vals)

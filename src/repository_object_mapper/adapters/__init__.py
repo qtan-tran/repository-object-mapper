@@ -128,7 +128,7 @@ class AdapterBase(ABC):
             try:
                 data = json.loads(self.checkpoint_path.read_text())
                 return HarvestCheckpoint.from_dict(data)
-            except Exception as exc:  # noqa: BLE001
+            except Exception as exc:
                 log.warning(
                     "checkpoint_unreadable",
                     path=str(self.checkpoint_path),

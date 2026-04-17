@@ -193,7 +193,7 @@ def classify_cmd(
     rel_df.to_parquet(_relations_path(), index=False)
 
     # Update capability profile now that we know which records are articles
-    with open(_profile_path(), "r", encoding="utf-8") as f:
+    with open(_profile_path(), encoding="utf-8") as f:
         existing = json.load(f)
     caps = {
         repo: d.get("available_affordances", {})
@@ -299,7 +299,7 @@ def score_cmd(log_level: str = typer.Option("INFO")) -> None:
     configure_logging(log_level)
     df = pd.read_parquet(_records_path())
     records = _records_from_df(df)
-    with open(_profile_path(), "r", encoding="utf-8") as f:
+    with open(_profile_path(), encoding="utf-8") as f:
         profile = json.load(f)
     scores = score_records(records, profile)
     scores.to_parquet(_scores_path(), index=False)
@@ -331,7 +331,7 @@ def visualize_cmd(log_level: str = typer.Option("INFO")) -> None:
     scores = pd.read_parquet(_scores_path())
     df = pd.read_parquet(_records_path())
     records = _records_from_df(df)
-    with open(_profile_path(), "r", encoding="utf-8") as f:
+    with open(_profile_path(), encoding="utf-8") as f:
         profile = json.load(f)
     paths = run_visualizations(scores, records, profile, OUTPUT_DIR / "figures")
     typer.echo(f"Produced {len(paths)} figures in output/figures/")

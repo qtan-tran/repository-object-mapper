@@ -8,14 +8,10 @@ being resumable, idempotent, and crash-free.
 from __future__ import annotations
 
 import json
-import os
-import shutil
 from pathlib import Path
 
-import pandas as pd
 import pytest
 
-from repository_object_mapper.adapters import AdapterConfig
 from repository_object_mapper.analyze import run_analysis
 from repository_object_mapper.cache import ResolutionCache
 from repository_object_mapper.classify import classify_many, load_type_mapping
@@ -25,7 +21,6 @@ from repository_object_mapper.resolve import ResolutionConfig, resolve_records
 from repository_object_mapper.sample import build_adapter, load_sample_config
 from repository_object_mapper.schema import NormalizedRecord
 from repository_object_mapper.score import score_records, summarize_by_repository
-
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 

@@ -13,8 +13,8 @@ import pytest
 from repository_object_mapper.adapters import AdapterConfig
 from repository_object_mapper.adapters.oai_pmh import (
     OAIPMHAdapter,
-    _strip_doi,
     _guess_identifier_from_string,
+    _strip_doi,
 )
 
 
@@ -56,7 +56,6 @@ def test_guess_identifier_discriminates_schemes() -> None:
 
 def test_oai_dc_parses_mock_records(monkeypatch, tmp_output: Path) -> None:
     # Run against our generated tier1 mocks
-    import os
     project_root = Path(__file__).resolve().parent.parent
     monkeypatch.chdir(project_root)
 

@@ -227,7 +227,7 @@ class OAIPMHAdapter(AdapterBase):
                 log.warning("resumption_token_bad", error=str(exc))
                 # Restart without token; the caller can detect via missing records
                 break
-            except Exception as exc:  # noqa: BLE001
+            except Exception as exc:
                 log.warning("record_parse_error", error=str(exc))
 
             count += 1

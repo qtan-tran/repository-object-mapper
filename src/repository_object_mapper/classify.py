@@ -99,9 +99,7 @@ def classify_record(
     rule_type, rule_conf = _classify_from_rules(record)
 
     # Decision logic
-    if decl_type is not None and decl_conf == ConfidenceLevel.HIGH:
-        chosen, confidence = decl_type, decl_conf
-    elif decl_type is not None and rule_type is None:
+    if (decl_type is not None and decl_conf == ConfidenceLevel.HIGH) or (decl_type is not None and rule_type is None):
         chosen, confidence = decl_type, decl_conf
     elif rule_type is not None and decl_type is None:
         chosen, confidence = rule_type, rule_conf

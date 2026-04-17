@@ -84,7 +84,7 @@ class ZenodoAdapter(AdapterBase):
                 record = self._parse_record(doc, payload, endpoint=str(jf))
                 if record is not None:
                     yield record
-            except Exception as exc:  # noqa: BLE001
+            except Exception as exc:
                 log.warning("zenodo_parse_error", file=str(jf), error=str(exc))
 
             cp.records_harvested += 1
