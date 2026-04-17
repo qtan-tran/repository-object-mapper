@@ -270,10 +270,10 @@ def _render_markdown(
     lines.append("| Repository | tier | n | relational (raw) | agent (raw) | object fully (raw) | relational adj | agent adj | object adj fully |")
     lines.append("|---|---|---|---|---|---|---|---|---|")
     for repo, d in boots.items():
-        def fmt(col: str) -> str:
-            if col not in d:
-                return "—"
-            cell = d[col]
+    def fmt(col: str, d=d) -> str:   # <-- this fixes it
+        if col not in d:
+            return "—"
+        cell = d[col]
             if not isinstance(cell, dict):
                 return "—"
             return f"{cell['mean']:.3f} [{cell['ci_low']:.3f}, {cell['ci_high']:.3f}]"
