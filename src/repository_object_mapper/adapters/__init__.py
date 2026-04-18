@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 from abc import ABC, abstractmethod
 from collections.abc import Iterator
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -52,7 +52,7 @@ class HarvestCheckpoint:
     repository_name: str
     last_cursor: str | None = None  # adapter-defined (token, offset, page...)
     records_harvested: int = 0
-    updated_at: datetime = datetime.now(timezone.utc)
+    updated_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
 
     def to_dict(self) -> dict[str, Any]:
         return {

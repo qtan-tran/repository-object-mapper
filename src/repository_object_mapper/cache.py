@@ -92,11 +92,7 @@ class ResolutionCache:
         resolution_tier: ResolutionTier,
     ) -> None:
         key = _key(scheme, value)
-        payload: str | None
-        if isinstance(raw_response, dict):
-            payload = json.dumps(raw_response)
-        else:
-            payload = raw_response
+        payload: str | None = json.dumps(raw_response) if isinstance(raw_response, dict) else raw_response
 
         self._conn.execute(
             "INSERT OR REPLACE INTO resolution "

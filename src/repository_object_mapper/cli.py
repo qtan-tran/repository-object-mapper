@@ -125,8 +125,8 @@ def _relations_to_df(records: list[NormalizedRecord]) -> pd.DataFrame:
 
 @app.command("sample")
 def sample_cmd(
-    config: Path = typer.Option(CONFIG_DEFAULT, "--config", "-c", exists=True),
-    log_level: str = typer.Option("INFO"),
+    config: Path = typer.Option(CONFIG_DEFAULT, "--config", "-c", exists=True),  # noqa: B008
+    log_level: str = typer.Option("INFO"),  # noqa: B008
 ) -> None:
     """Validate and summarize the sampling frame."""
     configure_logging(log_level)
@@ -141,9 +141,9 @@ def sample_cmd(
 
 @app.command("harvest")
 def harvest_cmd(
-    config: Path = typer.Option(CONFIG_DEFAULT, "--config", "-c", exists=True),
-    mock: bool = typer.Option(False, "--mock/--live"),
-    log_level: str = typer.Option("INFO"),
+    config: Path = typer.Option(CONFIG_DEFAULT, "--config", "-c", exists=True),  # noqa: B008
+    mock: bool = typer.Option(False, "--mock/--live"),  # noqa: B008
+    log_level: str = typer.Option("INFO"),  # noqa: B008
 ) -> None:
     """Run adapters, normalize records, and emit the capability profile."""
     configure_logging(log_level)
@@ -173,8 +173,8 @@ def harvest_cmd(
 
 @app.command("classify")
 def classify_cmd(
-    mapping: Path = typer.Option(TYPE_MAPPING_DEFAULT, "--mapping", "-m", exists=True),
-    log_level: str = typer.Option("INFO"),
+    mapping: Path = typer.Option(TYPE_MAPPING_DEFAULT, "--mapping", "-m", exists=True),  # noqa: B008
+    log_level: str = typer.Option("INFO"),  # noqa: B008
 ) -> None:
     """Apply hierarchical object-type classification."""
     configure_logging(log_level)

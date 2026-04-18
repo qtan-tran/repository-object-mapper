@@ -5,7 +5,7 @@ Produces:
 - Per-dimension distributions (violin/kde per repository)
 - Per-object-type boxplots within each repository
 - Tier-vs-embeddedness scatter plots (raw and available-adjusted)
-- Capability profile heatmap (repositories × relation types)
+- Capability profile heatmap (repositories x relation types)
 - Network graph visualizing a Zenodo article and its relational context
 """
 
@@ -140,7 +140,7 @@ def tier_scatter(scores: pd.DataFrame, out_dir: Path | str) -> list[Path]:
 def capability_heatmap(
     profile: dict[str, dict], out_dir: Path | str
 ) -> Path | None:
-    """Heatmap: repositories × native relation types, cells = population rate."""
+    """Heatmap: repositories x native relation types, cells = population rate."""
     out = _ensure_dir(out_dir)
     # Collect the union of all native relation types across repositories
     all_types: set[str] = set()
@@ -207,10 +207,6 @@ def article_network_graph(
     center = f"Article: {record.title[:40] if record.title else record.local_identifier}"
     g.add_node(center, kind="article")
     for rel in record.relations:
-        label = (
-            f"{rel.resolved_object_type.value if rel.resolved_object_type else 'unresolved'}\n"
-            f"({rel.native_relation_type})"
-        )
         target = rel.target_identifier.value[:32]
         g.add_node(
             target,

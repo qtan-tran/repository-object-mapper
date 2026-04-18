@@ -225,10 +225,7 @@ class ZenodoAdapter(AdapterBase):
 
         # License
         lic = metadata.get("license")
-        if isinstance(lic, dict):
-            license_ = lic.get("id") or lic.get("title")
-        else:
-            license_ = lic
+        license_ = lic.get("id") or lic.get("title") if isinstance(lic, dict) else lic
 
         # Funders
         funders: list[Funder] = []
