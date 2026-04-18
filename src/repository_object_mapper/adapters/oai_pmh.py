@@ -183,8 +183,8 @@ class OAIPMHAdapter(AdapterBase):
         self, cp: HarvestCheckpoint, limit: int
     ) -> Iterator[NormalizedRecord]:
         try:
-            from sickle import Sickle  # type: ignore[import-untyped]
-            from sickle.oaiexceptions import (  # type: ignore[import-untyped]
+            from sickle import Sickle
+            from sickle.oaiexceptions import (
                 BadResumptionToken,
                 NoRecordsMatch,
             )
@@ -331,7 +331,7 @@ class OAIPMHAdapter(AdapterBase):
         descs = findall_text("description")
         out["description"] = descs[0] if descs else None
 
-        out["declared_type_raw"] = (findall_text("type") or [None])[0]
+        out["declared_type_raw"] = findall_text("type")[0] if findall_text("type") else None
         out["subjects"] = findall_text("subject")
         rights = findall_text("rights")
         out["license"] = rights[0] if rights else None

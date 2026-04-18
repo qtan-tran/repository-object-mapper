@@ -276,7 +276,7 @@ def resolve_cmd(
     rel_df.to_parquet(_relations_path(), index=False)
 
     # Emit resolution report keyed by repository
-    resolution_report = {}
+    resolution_report: dict[str, dict[str, int]] = {}
     for r in records:
         bucket = resolution_report.setdefault(
             r.repository_name,
