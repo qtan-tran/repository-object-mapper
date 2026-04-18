@@ -122,7 +122,7 @@ def within_repository_object_type_comparison(
             group[group["object_type"] == t][column].dropna().to_numpy(dtype=float)
             for t in target_types
         ]
-        non_empty = [(t, s) for t, s in zip(target_types, subsets) if len(s) > 0]
+        non_empty = [(t, s) for t, s in zip(target_types, subsets, strict=True) if len(s) > 0]
 
         repo_result: dict[str, Any] = {
             "n_articles": int((group["object_type"] == "article").sum()),
@@ -287,7 +287,7 @@ def _render_markdown(
         )
 
     lines.append("")
-    lines.append("## Cross-tier Kruskal–Wallis (exploratory, n=4 repositories)")
+    lines.append("## Cross-tier Kruskal-Wallis (exploratory, n=4 repositories)")
     lines.append("")
     for col, res in cross_tier.items():
         if res.get("skipped"):
