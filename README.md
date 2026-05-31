@@ -72,7 +72,7 @@ cd repository-object-mapper
 pip install -e ".[dev]"
 ```
 
-Python ≥ 3.10. See `requirements.txt` for runtime-only installs.
+Python ≥ 3.10. See `requirements.txt` for the runtime-only install.
 
 ## CLI pipeline
 
