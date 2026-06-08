@@ -18,7 +18,7 @@ documentary status of the scholarly article in open access infrastructures.
 The paper argues that the scholarly article is **symbolically central but
 infrastructurally decentered** in contemporary open access infrastructures:
 it remains the legitimating unit of scholarship while being represented in
-repository systems as one node in a relational documentary assemblage.
+repository systems as a node in a relational documentary assemblage.
 
 **H2 (primary).** The documentary autonomy of the scholarly article in open
 repositories is inversely related to the relational richness of the
