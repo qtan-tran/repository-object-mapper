@@ -37,7 +37,7 @@ classification-as-infrastructure show that metadata schemas are not neutral
 containers but active shapers of what a document can be. More recently,
 Blanchette's *Burdens of Proof* and Moore's work on the political economies
 of open access have foregrounded how the material specifics of digital
-representation — identifier schemes, relation types, agent identifiers —
+representation (i.e., identifier schemes, relation types, agent identifiers)
 constitute a document's documentary status. This pipeline operationalizes
 that framing: it measures the degree to which an article record, as carried
 by repository metadata, remains an autonomous documentary object versus
