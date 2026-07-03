@@ -6,7 +6,7 @@ abstract: >-
   articles within open access repository infrastructures, supporting a
   Journal of Documentation submission on the decentering of the
   scholarly article as a documentary object.
-version: 0.2.0
+version: 0.2.1
 date-released: 2026-04-17
 license: MIT
 type: software
