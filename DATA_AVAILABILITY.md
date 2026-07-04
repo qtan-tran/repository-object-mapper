@@ -7,7 +7,7 @@ repositories via their documented OAI-PMH or REST APIs. Repositories,
 endpoints, and sampling parameters are recorded in
 `config/sample_v0_2.yaml`.
 
-No authentication is required for any source used at v0.2.
+No authentication is required for any source used at this version.
 
 ## Derived data
 
