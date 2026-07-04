@@ -41,7 +41,7 @@ representation (i.e., identifier schemes, relation types, agent identifiers)
 constitute a document's documentary status. This pipeline operationalizes
 that framing: it measures the degree to which an article record, as carried
 by repository metadata, remains an autonomous documentary object versus
-existing as one node in a typed relational graph.
+existing as one node in a relational graph.
 
 ## The critical conceptual distinction: available vs used affordances
 
