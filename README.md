@@ -76,7 +76,7 @@ Python ≥ 3.10. See `requirements.txt` for the runtime-only install.
 
 ## CLI pipeline
 
-The pipeline is a sequence of idempotent, resumable stages orchestrated by
+The pipeline is a sequence of idempotent, resumable stages that are orchestrated by
 `typer`. Each stage reads and writes files under `output/`; rerunning any
 stage never corrupts prior results. `rom resolve` owns its own SQLite state
 at `data/cache/resolution.db` and is independently runnable.
