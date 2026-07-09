@@ -8,7 +8,7 @@ documentary status of the scholarly article in open access infrastructures.
 > **v0.2 — paper-submittable minimum.** Four repositories, one per schema
 > tier, ~1,500 articles per repository (≈6,000 article records total), plus
 > non-article records for the within-repository object-type comparison.
-> v0.5 expands to 20 repositories (see `ROADMAP.md`); the pipeline is
+> v0.5 expands to ~20 repositories (see `ROADMAP.md`); the pipeline is
 > designed to scale without rewrite.
 
 ---
