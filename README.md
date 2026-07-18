@@ -35,7 +35,7 @@ Frohmann's emphasis on documentary *practice* over documentary *content*.
 Borgman's account of scholarly infrastructures and Bowker & Star's
 classification-as-infrastructure show that metadata schemas are not neutral
 containers but active shapers of what a document can be. More recently,
-Blanchette's *Burdens of Proof* and Moore's work on the political economies
+Blanchette's *Burdens of Proof* and especially Moore's work on the political economies
 of open access have foregrounded how the material specifics of digital
 representation (i.e., identifier schemes, relation types, agent identifiers)
 constitute a document's documentary status. This pipeline operationalizes
