@@ -118,7 +118,7 @@ make demo
 
 ## v0.2 sampling design and its limitations
 
-v0.2 uses a deliberately limited but (fairly) principled stratified design:
+v0.2 uses a (deliberately) limited but (fairly) principled stratified design:
 
 | Tier | Description                        | Repository (anchor)                                |
 | ---- | ---------------------------------- | -------------------------------------------------- |
