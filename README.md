@@ -5,7 +5,7 @@ within the metadata infrastructures of open access repositories.
 Part of a forthcoming *Journal of [XXX]* article on the changing
 documentary status of the scholarly article in open access infrastructures.
 
-> **v0.2 — paper-submittable minimum.** Four repositories, one per schema
+> **v0.2.1 — paper-submittable minimum.** Four repositories, one per schema
 > tier, ~1,500 articles per repository (≈6,000 article records total), plus
 > non-article records for the within-repository object-type comparison.
 > v0.5 expands to ~15 repositories (see `ROADMAP.md`); the pipeline is
